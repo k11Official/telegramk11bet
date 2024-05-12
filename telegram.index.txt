@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Telegram Redirect</title>
+  <script>
+    function redirectToTelegram() {
+      var telegramLinks = [
+        "https://t.me/vikask1112",
+        "https://t.me/K11bets"
+      ];
+      
+      // Randomly select a Telegram link
+      var randomIndex = Math.floor(Math.random() * telegramLinks.length);
+      var selectedLink = telegramLinks[randomIndex];
+      
+      // Redirect the user to the selected Telegram link
+      window.location.href = selectedLink;
+    }
+  </script>
+</head>
+<body onload="redirectToTelegram()">
+  <p>Redirecting to Telegram...</p>
+  <p>If you are not redirected automatically, please click <a href="https://t.me/vikask1112">here</a> or <a href="https://t.me/K11bets">here</a>.</p>
+</body>
+</html>
